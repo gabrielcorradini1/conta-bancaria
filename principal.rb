@@ -7,8 +7,8 @@ conta_rafael = ContaBancaria.new("rafael", 200)
 conta_gabriel.transferir(conta_rafael, 50)
 
 
-puts "Saldo do Gabriel: " + conta_gabriel.saldo
-puts "Saldo do Rafael: " + conta_rafael.saldo
+puts "Saldo do Gabriel: #{conta_gabriel.saldo}"
+puts "Saldo do Rafael: #{conta_rafael.saldo}"
 
 #teste de conta sem saldo
 begin
@@ -17,5 +17,5 @@ rescue StandardError => meu_erro
     p "Não foi possível transferir: #{meu_erro.message}"
 end
 
-puts "Saldo do Gabriel: " + conta_gabriel.saldo
-puts "Saldo do Rafael: " + conta_rafael.saldo
+puts "Saldo do Gabriel: #{conta_gabriel.saldo}"
+puts "Saldo do Rafael: #{conta_rafael.saldo}"
